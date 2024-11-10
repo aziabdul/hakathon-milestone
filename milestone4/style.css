@@ -1,0 +1,96 @@
+/* Styling form and resume sections */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px;
+    background-color: #f8f9fa;
+}
+
+form {
+    margin: auto;
+    background-color: rgb(228, 242, 255);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 1.8em;
+}
+
+fieldset {
+    border: 2px solid skyblue;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: aliceblue;
+}
+
+legend {
+    font-weight: bold;
+    color: #222;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #444;
+}
+
+input, textarea {
+    margin-top: 4px;
+    padding: 8px;
+    width: calc(100% - 16px);
+    border: 1px solid skyblue;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    display: block;
+    width: 100%;
+    background-color: skyblue;
+    color: #333;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+    font-size: 18px;
+    padding: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #87ceeb;
+    color: white;
+}
+
+#resume-display {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid skyblue;
+    border-radius: 8px;
+    background-color: rgb(228, 242, 255);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    outline: none;
+    font-size: 1em;
+    color: #333;
+}
+
+/* Mobile responsive design */
+@media (max-width: 600px) {
+    body {
+        margin: 10px;
+    }
+    form, #resume-display {
+        padding: 15px;
+        box-shadow: none;
+    }
+    button {
+        font-size: 16px;
+    }
+}
